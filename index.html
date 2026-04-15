@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Personal Finance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Personal Finance</h1>
+
+        <form>
+
+            <h2>Visualize seus gastos diários!</h2>
+
+            <div>
+
+                <label>Descreva o gasto. Ex: almoço, café, etc.</label>
+                <input type="text" id="gasto" placeholder="Insira o gasto" required>
+
+            </div>
+
+            <div>
+
+                <label>Valor:</label>
+                <input type="number" id="valor" placeholder="Insira o valor" required>
+
+            </div>
+
+            <div>
+
+                <label>Selecione a categoria:</label>
+                <select name="cat" id="categoria" required>
+                    <option value="0">--</option>
+                    <option value="1">Alimentação</option>
+                    <option value="2">Transporte</option>
+                    <option value="3">Emergência</option>
+                    <option value="4">Outros</option>
+                </select>
+
+            </div>
+
+            <button type="button" id="adicionar">Adicionar gasto</button>
+
+        </form>
+
+        <section id="gastos">
+
+            <h2>Tabela com seus gastos:</h2>
+
+            <table>
+
+                <tr>
+                    <th>Gasto</th>
+                    <th>Categoria</th>
+                    <th>Valor</th>
+                </tr>
+
+            </table>
+
+            <p id="total">Total gasto:</p>
+
+        </section>
+
+    </main>
+
+</body>
+
+<footer>
+
+    <p>&copy; Todos os direitos reservados.</p>
+    <p><em>Desenvolvido por: </em><a href="https://linkedin.com/in/pedro-henrique-1b7422294" target="_blank">Pedro
+            Henrique Oliveira Bezerra</a></p>
+
+</footer>
+
+</html>
